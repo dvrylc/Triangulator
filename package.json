@@ -1,0 +1,25 @@
+{
+  "name": "Triangulator",
+  "version": "1.0.0",
+  "description": "A visual triangulation tool",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-uglify": "^1.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dvrylc/Triangulator.git"
+  },
+  "author": "Daryl Chan and Preshant Achuthan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dvrylc/Triangulator/issues"
+  },
+  "homepage": "https://github.com/dvrylc/Triangulator"
+}

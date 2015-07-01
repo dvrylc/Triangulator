@@ -1,0 +1,13 @@
+body {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.panel, .btn {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#map-canvas {
+  height: 75vh;
+}
