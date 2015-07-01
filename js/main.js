@@ -1,5 +1,5 @@
 // Globals
-var CID = [], LAC = [], T_LAT = [], T_LNG = [], MARKER = [], FOUND = 0, MAP;
+var CID = [], LAC = [], T_LAT = [], T_LNG = [], MARKER = [], FOUND = 0, CENTERMARKER, MAP;
 var TRIANGULATE_BTN = $("#triangulate_btn");
 
 function get_values() {
@@ -37,7 +37,9 @@ function plot() {
     for (var i = 1; i < MARKER.length; i++) {
       MARKER[i].setMap(null);
     }
-    centermarker.setMap(null);
+    if (typeof CENTERMARKER !== 'undefined') {
+      CENTERMARKER.setMap(null);
+    }
   }
 
   // Define points
@@ -67,11 +69,11 @@ function plot() {
   MAP.fitBounds(zoombounds);
 
   // Plot center point
-  var centermarker = new google.maps.Marker({
+  CENTERMARKER = new google.maps.Marker({
     position: zoombounds.getCenter(),
     icon: "https://google-developers.appspot.com/maps/documentation/javascript/examples/full/images/beachflag.png"
   });
-  centermarker.setMap(MAP);
+  CENTERMARKER.setMap(MAP);
 
   FOUND = 0;
 
